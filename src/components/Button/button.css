@@ -1,0 +1,14 @@
+button {
+  flex: 1;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  background: lightgrey;
+  border: 2px solid lightgray;
+  margin: 1px;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.95);
+}
