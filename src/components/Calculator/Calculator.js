@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '../Button/Button';
 import './calculator.css';
+import calculate from '../../logic/calculate.js'
 
 const Calculator = () => {
   const operatorsBtnColor = '#f4b848';
