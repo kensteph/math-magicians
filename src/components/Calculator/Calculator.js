@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from '../Button/Button';
 import './calculator.css';
 import calculate from '../../logic/calculate.js'
 
 const Calculator = () => {
   const operatorsBtnColor = '#f4b848';
+  const [result,setResult]= useState();
+  
+  const handleClick = (ev) =>{
+
+  }
   return (
     <div className="calculator-wrapper">
       <div className="display">0</div>
