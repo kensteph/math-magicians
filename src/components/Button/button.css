@@ -17,3 +17,11 @@ button:hover {
 button:active {
   transform: scale(0.95);
 }
+
+.operatorBtn {
+  background: #f4b848;
+}
+
+.zeroBtn {
+  flex: 2.55;
+}
