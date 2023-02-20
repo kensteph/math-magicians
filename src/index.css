@@ -3,6 +3,6 @@
 body {
   font-family: 'Roboto Mono', monospace;
   background-image: url('./assets/bg.jpg');
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: cover;
 }
