@@ -1,13 +1,14 @@
-section {
+.section {
   padding: 30px;
 }
 
-h2 {
+.h2 {
   text-align: left;
   font-size: 30px;
   font-weight: 700;
 }
 
-p {
+.p {
+  font-size: 20px;
   text-align: left;
 }
