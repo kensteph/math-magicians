@@ -19,13 +19,13 @@ nav > ul {
   gap: 10px;
 }
 
-nav > ul > li {
+.navlink {
   text-align: center;
   padding: 5px;
 }
 
-.vertical-line {
-  border-right: 3px solid red;
+.verticalLine {
+  border-right: 3px solid cornflowerblue;
 }
 
 nav > ul > li a {

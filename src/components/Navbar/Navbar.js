@@ -1,22 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './navbar.module.css';
+import styles from './navbar.module.css';
 
 const Navbar = () => (
   <header>
     <nav>
-      <h1 className="logo"> Math Magicians </h1>
+      <h1 className={styles.logo}> Math Magicians </h1>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link className={styles.navLink} to="/">
+            Home
+          </Link>
         </li>
-        <li className="vertical-line" />
+        <li className={styles.verticalLine} />
         <li>
-          <Link to="/calculator">Calculator</Link>
+          <Link className={styles.navLink} to="/calculator">
+            Calculator
+          </Link>
         </li>
-        <li className="vertical-line" />
+        <li className={styles.verticalLine} />
         <li>
-          <Link to="/Quote">Quote</Link>
+          <Link className={styles.navLink} to="/Quote">
+            Quote
+          </Link>
         </li>
       </ul>
     </nav>
