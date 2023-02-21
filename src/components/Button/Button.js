@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './button.css';
+import styles from './button.module.css';
 
 const Button = ({ symbole, className, handleClick }) => (
-  <button type="button" className={className} onClick={handleClick}>
+  <button type="button" className={styles[className]} onClick={handleClick}>
     {symbole}
   </button>
 );
