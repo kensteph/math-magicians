@@ -16,4 +16,10 @@ describe('Operate function', () => {
     // Assert
     expect(result).toBe('3');
   });
+  it('Multiplication', () => {
+    // Act
+    const result = operate(number1, number2, 'x');
+    // Assert
+    expect(result).toBe('40');
+  });
 });
