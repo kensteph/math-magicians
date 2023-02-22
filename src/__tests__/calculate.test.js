@@ -11,7 +11,7 @@ describe('Calculate function', () => {
     // Act
     obj.total = '23';
     const result = calculate(obj, 'AC');
-    // Asset
+    // Assert
     expect(result).not.toBeNull();
     expect(result.total).toBeNull();
   });
@@ -20,7 +20,7 @@ describe('Calculate function', () => {
     obj.total = null;
     obj.next = '23';
     const result = calculate(obj, '+/-');
-    // Asset
+     // Assert
     expect(result.next).toBe('-23');
   });
   it('Positive to negative number', () => {
@@ -28,7 +28,7 @@ describe('Calculate function', () => {
     obj.total = null;
     obj.next = '23';
     const result = calculate(obj, '+/-');
-    // Asset
+    // Assert
     expect(result.next).toBe('-23');
   });
   it('Negative to positive number', () => {
@@ -36,7 +36,17 @@ describe('Calculate function', () => {
     obj.total = '-1804';
     obj.next = null;
     const result = calculate(obj, '+/-');
-    // Asset
+    // Assert
     expect(result.total).toBe('1804');
+  });
+
+  it('0 button', () => {
+    // Act
+    obj.total = null;
+    obj.next = '0';
+    const result = calculate(obj, '0');
+    console.log(obj);
+    // Assert
+    expect(result.hasOwnProperty('total')).toBeFalsy();
   });
 });
