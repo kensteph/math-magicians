@@ -55,6 +55,7 @@
 
 - **Simple Calculations**
 - **Display random math-related quote**
+- **Add JEST test for all the components and functions**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -151,12 +152,18 @@ You can deploy this project using:
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 👤 **Kender Romain**
 
 - GitHub: [@Kensteph](https://github.com/kensteph)
 - Twitter: [@RomainKender](https://twitter.com/RomainKender)
 - LinkedIn: [kender-romain8788](https://www.linkedin.com/in/kender-romain8788/)
+
+👤 **Biruk Bereka**
+
+- GitHub: [@biruk-bereka](https://github.com/biruk-bereka)
+- LinkedIn:[@Biruk Bereka](https://www.linkedin.com/in/biruk-bereka1212/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
