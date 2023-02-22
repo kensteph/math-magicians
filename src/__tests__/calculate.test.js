@@ -15,4 +15,28 @@ describe('Calculate function', () => {
     expect(result).not.toBeNull();
     expect(result.total).toBeNull();
   });
+  it('Positive to negative number', () => {
+    // Act
+    obj.total = null;
+    obj.next = '23';
+    const result = calculate(obj, '+/-');
+    // Asset
+    expect(result.next).toBe('-23');
+  });
+  it('Positive to negative number', () => {
+    // Act
+    obj.total = null;
+    obj.next = '23';
+    const result = calculate(obj, '+/-');
+    // Asset
+    expect(result.next).toBe('-23');
+  });
+  it('Negative to positive number', () => {
+    // Act
+    obj.total = '-1804';
+    obj.next = null;
+    const result = calculate(obj, '+/-');
+    // Asset
+    expect(result.total).toBe('1804');
+  });
 });
