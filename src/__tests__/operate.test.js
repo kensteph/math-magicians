@@ -10,4 +10,10 @@ describe('Operate function', () => {
     // Assert
     expect(result).toBe('13');
   });
+  it('Subtraction', () => {
+    // Act
+    const result = operate(number1, number2, '-');
+    // Assert
+    expect(result).toBe('3');
+  });
 });
