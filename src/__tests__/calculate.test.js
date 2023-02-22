@@ -74,4 +74,15 @@ describe('Calculate function', () => {
     const result2 = calculate(result, '.');
     expect(result2.next).toBe('6.');
   });
+
+  it('for = button', () => {
+    // Act
+    obj.next = '6'
+    obj.operation = '+';
+    obj.total = '7';
+    const result = calculate(obj, '=');
+    
+    // Assert
+    expect(result.total).toBe('13');
+  });
 });
