@@ -45,7 +45,6 @@ describe('Calculate function', () => {
     obj.total = null;
     obj.next = '0';
     const result = calculate(obj, '0');
-    console.log(obj);
     // Assert
     expect(result.hasOwnProperty('total')).toBeFalsy();
   });
