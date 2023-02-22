@@ -46,7 +46,7 @@ describe('Calculate function', () => {
     obj.next = '0';
     const result = calculate(obj, '0');
     // Assert
-    expect(result.hasOwnProperty('total')).toBeFalsy();
+    expect(result.total).toBeUndefined();
   });
 
   it('if pressed an operation button and there is an existing operation', () => {

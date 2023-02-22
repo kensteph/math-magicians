@@ -8,7 +8,7 @@ describe('Navbar', () => {
   render(
     <BrowserRouter>
       <Navbar />
-    </BrowserRouter>
+    </BrowserRouter>,
   );
   it('Should display the Navbar component with 3 links', () => {
     // Act
