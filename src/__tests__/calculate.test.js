@@ -63,11 +63,15 @@ describe('Calculate function', () => {
   });
   it('for . button', () => {
     // Act
-    const result1 = {total: null, next: '6', operation: '+'};
-    const result = calculate(result1, '+');
+    obj.next = '6'
+    obj.operation = null;
+    obj.total = null;
+    const result = calculate(obj, '.');
     
     // Assert
-    expect(result.total).toBe(0);
-    expect(result.operation).toBe('+');
+    expect(result.next).toBe('6.');
+
+    const result2 = calculate(result, '.');
+    expect(result2.next).toBe('6.');
   });
 });
