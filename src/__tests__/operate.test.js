@@ -37,7 +37,18 @@ describe('Operate function', () => {
     // Assert
     expect(result).toBe(`Can't divide by 0.`);
   });
-
-
-
+  
+  it('Modulus', () => {
+    // Act
+    const result = operate(number1, number2, '%');
+    // Assert
+    expect(result).toBe('3');
+  });
+  
+  it('Modulus of number by zero', () => {
+    // Act
+    const result = operate(number1, zero, '%');
+    // Assert
+    expect(result).toBe(`Can't find modulo as can't divide by 0.`);
+  });
 });
