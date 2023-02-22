@@ -5,4 +5,7 @@ module.exports = {
     '\\.(css|less)$': 'identity-obj-proxy',
   },
   testEnvironment: 'jsdom',
+  watchPlugins: [
+    'jest-watch-typeahead/filename',
+  ],
 };
