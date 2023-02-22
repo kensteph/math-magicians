@@ -20,7 +20,7 @@ describe('Calculate function', () => {
     obj.total = null;
     obj.next = '23';
     const result = calculate(obj, '+/-');
-     // Assert
+    // Assert
     expect(result.next).toBe('-23');
   });
   it('Positive to negative number', () => {
@@ -52,22 +52,22 @@ describe('Calculate function', () => {
 
   it('if pressed an operation button and there is an existing operation', () => {
     // Act
-    obj.next = '6'
-    obj.operation = "+"
+    obj.next = '6';
+    obj.operation = '+';
     obj.total = null;
     const result = calculate(obj, '+');
-    
+
     // Assert
     expect(result.total).toBe(0);
     expect(result.operation).toBe('+');
   });
   it('for . button', () => {
     // Act
-    obj.next = '6'
+    obj.next = '6';
     obj.operation = null;
     obj.total = null;
     const result = calculate(obj, '.');
-    
+
     // Assert
     expect(result.next).toBe('6.');
 
@@ -77,11 +77,11 @@ describe('Calculate function', () => {
 
   it('for = button', () => {
     // Act
-    obj.next = '6'
+    obj.next = '6';
     obj.operation = '+';
     obj.total = '7';
     const result = calculate(obj, '=');
-    
+
     // Assert
     expect(result.total).toBe('13');
   });
